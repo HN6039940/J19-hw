@@ -1,0 +1,30 @@
+.wrap {
+    margin: 100px auto;
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pig-img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+}
+
+.appear {
+    opacity: 1;
+/* アニメーション設定(ベンダープレフィックス　ブラウザ別) */
+    transition: all 3s ease-in-out;
+    -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -ms-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    
+    transform: scaleX(1.2) ;
+    -webkit-transform: scale(1.2) ;
+    -moz-transform: scale(1.2) ;
+    -ms-transform: scale(1.2) ;
+    -o-transform: scale(1.2) ;
+}
